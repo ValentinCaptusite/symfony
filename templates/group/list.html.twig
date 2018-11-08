@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<a href="/group/add"><img src="../images/plus-2x.png" alt="edit"/> Add</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for group in groups %}
+            <tr>
+                <td>
+                    {{group.id}}
+                </td>
+                <td>
+                    {{group.label}}
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                    <a href="/group/edit/{{group.id}}"><img src="../images/pencil-2x.png" alt="edit"/></a>
+                    <a href="/group/delete/{{group.id}}"><img src="../images/delete-2x.png" alt="delete"/></a>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <a href="/adresse/add"><img src="/../images/plus-2x.png" alt="edit"/> Add</a>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Adresse</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for adresse in adresses %}
+
+            <tr>
+                <td>
+                    {{adresse.id}}
+                </td>
+                <td>
+                    {{adresse.adresse}}
+                </td>
+                <td>
+                    <a href="/adresse/edit/{{adresse.id}}"><img src="/../images/pencil-2x.png" alt="edit"/></a>
+                    <a href="/adresse/delete/{{adresse.id}}"><img src="/../images/delete-2x.png" alt="delete"/></a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+
+    </table>
+{% endblock %}

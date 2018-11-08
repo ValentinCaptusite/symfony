@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<a href="/user/add"><img src="/../images/plus-2x.png" alt="edit"/> Add</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Group</th>
+            <th>Adresse(s)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for user in users %}
+            <tr>
+                <td>
+                    {{user.id}}
+                </td>
+                <td>
+                    {{user.firstname}}
+                </td>
+                <td>
+                    {{user.lastname}}
+                </td>
+                <td>
+                    {{user.email}}
+                </td>
+                <td>
+                    {{user.phone}}
+                </td>
+                <td>
+                    {% if user.groupe %}
+                        {{user.groupe.label}}
+                    {% endif %}
+                </td>
+                <td>
+                    {% if user.adresse %}
+                        {% for addr in user.adresse %}
+                            {{addr.adresse}}<br/>
+                        {% endfor %}
+                    {% endif %}
+                </td>
+                <td>
+                    <a href="/user/edit/{{user.id}}"><img src="/../images/pencil-2x.png" alt="edit"/></a>
+                    <a href="/user/delete/{{user.id}}"><img src="/../images/delete-2x.png" alt="delete"/></a>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+{% endblock %}

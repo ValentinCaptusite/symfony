@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/src/Controller/GroupeController.php</file>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/src/Repository/UserRepository.php</file>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/src/Service/GroupService.php</file>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/src/Form/GroupType.php</file>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/templates/user/list.html.twig</file>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/templates/user/add.html.twig</file>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/templates/group/list.html.twig</file>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/src/Controller/UserController.php</file>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/templates/base.html.twig</file>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/src/Service/UserService.php</file>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/src/Entity/User.php</file>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/config/packages/doctrine.yaml</file>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/src/Entity/Groupe.php</file>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/templates/group/add.html.twig</file>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/src/Form/UserType.php</file>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/src/Controller/IndexController.php</file>
+            <file>file:/C:/Users/Valentin/Documents/testSymfony/templates/index.html.twig</file>
+        </group>
+    </open-files>
+</project-private>
